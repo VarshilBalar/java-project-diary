@@ -3,8 +3,8 @@ Individual team members can record the time and type of activities they carried 
 Additionally, the application provides analysis functionality to evaluate the overall time spent on a certain type of activity with regard to various criteria.
 
 Main functions:
-Create, edit, and delete projects
-Configure hierarchically organised activity categories for a project
+Create, edit, and delete projects 
+\nConfigure hierarchically organised activity categories for a project
 Organize each project in iterations
 Add, edit, and delete activities
 Track time spent on a given activity
