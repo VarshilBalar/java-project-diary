@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <link rel="stylesheet" href="./profile.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="side-panel">
+            <h2>Welcome Back!</h2>
+            <p>Keep your profile updated to enjoy a seamless experience.</p>
+        </div>
+
+        <div class="content-container">
+            <h1>Profile Settings</h1>
+            <div class="profile-pic-container">
+                <img src="../assets/Profile.jpg" alt="Profile Picture" class="profile-pic" id="profilePic">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <button class="edit-pic-btn" onclick="uploadImage()">Edit Picture</button>
+            </div>
+
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="user-id">Username</label>
+                    <input type="text" id="user-id" placeholder="Enter your user ID" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" rows="3" placeholder="Tell us something about yourself"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function uploadImage() {
+            document.getElementById("fileInput").click();
+            document.getElementById("fileInput").onchange = function (event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        document.getElementById("profilePic").src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.overlay{
+    width:100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    position: absolute;
+}
+
+.formSection{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+}
+
+.form{
+    width:400px;
+    height: 500px;
+    margin:auto;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 4px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 50px;
+    align-items: center;
+    border-bottom: 2px solid rgb(226, 221, 221);
+}
+
+.leftNavSection{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logoSection{
+    display: flex;
+    gap:10px;
+}
+
+.logo{
+    width:32px;
+    height: 32px;
+}
+
+.logoText{
+    font-size:23px;
+    color: #809bce;
+    font-weight: 700;
+}
+
+.navs{
+    display: flex;
+    gap:15px;
+    margin-left:70px;
+    height: 100%;
+    align-items: center;
+    font-size: 14px;
+}
+
+.selectedNav{
+    display: flex;
+    height: 100%;
+    border-bottom: 3.5px solid #2c4778;
+    align-items: center;
+}
+
+.selectedNavText{
+    color: #2c4778;
+    font-weight: 600;
+}
+
+.unselectedNav{
+    color:#354e7e;
+}
+
+.reportsButton{
+    margin-left: 60px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #354e7e;
+}
+
+.rightNavSection {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 12px;
+    gap:12px;
+}
+
+.navImg{
+    width:20px;
+    height: 20px;
+}
+
+.searchBox{
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.mainContent{
+    display: flex;
+    height: calc(100% - 52px);
+    justify-content: space-between;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction:column;
+    width:200px;
+    gap:10px;
+    padding-top:25px;
+    border-right: 2px solid rgb(226, 221, 221);
+}
+
+.sidebarOptions{
+    display: flex;
+    padding: 5px 14px;
+    gap:15px;
+    cursor:pointer;
+}
+
+.sidebarOptions:hover{
+    background-color: rgb(244, 243, 243);
+}
+
+.sidebarOptionActive{
+    background-color: rgb(244, 243, 243);
+}
+
+.sidebarOptionsIcon{
+    width:20px;
+    height:20px;
+}
+
+.sidebarOptionsText{
+    font-size:13px;
+    color: rgb(102, 101, 101);
+}
+
+.mainContainer{
+    width: calc(100% - 400px);
+}
+
+.mainSection{
+    margin:20px 20px;
+}
+
+.projectHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectTitle{
+    font-size: 20px;
+}
+
+.createProjectButton{
+    border:none;
+    background-color: rgb(58, 58, 252);
+    color:white;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.projectFilterArea{
+    margin-top:20px;
+    margin-bottom: 30px;
+    display: flex;
+    gap:10px;
+}
+
+.typeInput{
+    width:170px;
+    height: 27px;
+}
+
+.columnHeaderBar{
+    display: flex;
+    justify-content: space-between;
+    font-size:15px;
+    font-weight: 700;
+    padding:0 5px;
+    padding-bottom:10px;
+    border-bottom:2px solid black;
+}
+
+.starIcon{
+    width:16px;
+    height: 16px;
+}
+
+.yellowStar{
+    display: none;
+}
+
+.columnHeader{
+    width:130px;
+    text-align: center;
+}
+
+.headerGroup{
+    display: flex;
+    gap:10px;
+}
+
+.projectListSection{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectBar{
+    display: flex;
+    justify-content: space-between;
+    font-size:14px;
+    padding:10px 5px;
+    border-bottom: 2px solid rgb(226, 221, 221);
+}
+
+
+.projectDetail{
+    width:120px;
+    text-align: center;
+}
+
+.projectDetailGroup{
+    display: flex;
+    gap:10px;
+    cursor: pointer;
+}
+
+.projectPageLink{
+    display: flex;
+    gap:5px;
+    text-decoration: none;
+    color: black;
+}
+
+.projectPageLink:hover{
+    text-decoration: underline;
+}
+
+.linkIcon{
+    width:14px;
+    height: 14px;
+}
+
+.arrowIcon{
+    width:16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.projectTeamSection{
+    width:98%;
+    margin:auto;
+    display: none;
+    max-height: 250px;
+    border: 1px solid rgb(226, 221, 221);
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow-y: scroll;
+}
+
+.teamSectionOpen{
+    display: block !important;
+}
+
+.projectTeamSection::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.projectTeamSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #f3eded;
+}
+
+.teamSectionHeaderRow{
+    display: flex;
+    justify-content: space-between;
+    margin-left:60px;
+    padding:10px;
+    font-size:12px;
+    font-weight: 700;
+}
+
+.teamRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 10px;
+    border-top:1px solid rgb(226, 221, 221);
+    font-size: 12px;
+}
+
+.teamMember{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.teamMemberIcon{
+    width:30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(236, 234, 234);
+}
+
+
+
+
+
+.rightSidebar {
+    width: 270px;
+    border-left: 2px solid rgb(226, 221, 221);
+}
+
+.profileSection {
+    width: 100%;
+    cursor: pointer;
+}
+
+.usernameIcon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 50%;
+    margin: 10px auto;
+    margin-top: 30px;
+    background-color: #b7d1e4;
+    color: #2c4778;
+    font-size: 30px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.useremail {
+    font-size: 14px;
+    text-align: center;
+}
+
+.calendarTitle{
+    font-size: 13px;
+    margin-left:5px;
+    margin-top:40px;
+    font-weight: 900;
+    color:#2c4778
+}
+
+.calendar{
+    margin:10px 5px;
+    font-size:12px;
+    background-color: #ecf0f3;
+    padding-top: 5px;
+    border-radius: 2px;
+}
+
+.monthHandle{
+    margin-left:5px;
+    border-bottom:1px solid black;
+    padding-bottom: 5px;
+}
+
+.weekdays{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+}
+
+.dateRow{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin-top:5px;
+}
+
+.date{
+    padding:5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.date:hover{
+    background-color: rgb(243, 239, 239);
+}
+
+.reminderSection{
+    border:8px solid rgb(193, 214, 161);
+    margin:5px 5px;
+    padding:5px;
+    height: 190px;
+}
+
+.reminderContainer{
+    overflow-y:scroll;
+}
+
+.reminderTitle{
+    font-size:12px;
+    font-weight: 900;
+    color:#354e7e;
+}
+
+.reminderUnit{
+    width:100%;
+    display: flex;
+    padding:5px 0px;
+    border-bottom:1px solid black;
+}
+
+.bellIconDiv{
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #354e7e;
+    border-radius: 50%;
+}
+
+.bellIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.reminderMessage{
+    margin-left:7px;
+    font-size: 12px;
+    font-weight: 600;
+}

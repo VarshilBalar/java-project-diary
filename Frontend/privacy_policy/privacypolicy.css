@@ -1,0 +1,376 @@
+
+.navbar{
+    width:100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    border-color: orange;
+    font-size: 20px;
+}
+
+.leftSection{
+    margin-left:60px;
+    display: flex;
+    gap:25px;
+}
+
+.rightSection{
+    margin-right:60px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.homeIcon{
+    width:20x;
+    height:20px;
+    cursor:pointer;
+}
+
+.aboutUs{
+    cursor:pointer;
+}
+
+.contactUs{
+    cursor:pointer;
+}
+
+.loginBtn{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginLink{
+    text-decoration: none;
+    color:black;
+}
+
+.signupBtn{
+    width:85px;
+    height:35px;
+    font-size:16px;
+    border:none;
+    border-radius:16px;
+    font-weight: 700;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+.footerSection{
+    width:100%;
+}
+
+.separator{
+    width:100%;
+    height:30px;
+    background-color: rgb(255, 205, 165);
+}
+
+.footerArea{
+    display: flex;
+    margin:40px 60px;
+    justify-content: space-around;
+}
+
+.footerProjectTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.quickLinksTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.contactTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.socialMediaIconsTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+
+.bodySection{
+    width:100%;
+    display: flex;
+}
+
+.leftMargin{
+    width:30px;
+    background-color: rgb(221, 241, 246);
+}
+.mainSection{
+    width:calc(100% - 60px);
+    padding:0px 25px;
+    margin-bottom:30px;
+}
+@media only screen and (max-width:1200px)
+{
+    .workImage{
+        width:500px;
+        height: 500px;
+    }
+
+    .textSection{
+        width: calc(100% - 500px);
+    }
+
+    .titleSection{
+        font-size:60px;
+    }
+    
+
+    .footerProjectTitle{
+        font-size:25px;
+    }
+
+    .quickLinksTitle{
+        font-size:25px;
+    }
+
+    .contactTitle{
+        font-size: 25px;
+    }
+
+    .socialMediaIconsTitle{
+        font-size:25px;
+    }
+
+    .aboutUs{
+        font-size: 18px;
+    }
+
+    .contactUs{
+        font-size:18px;
+    }
+
+    .loginBtn{
+        font-size: 18px;
+    }
+
+    .signupBtn{
+        font-size:14px;
+    }
+}
+
+@media only screen and (max-width:1024px)
+{
+    .workImage{
+        width:400px;
+        height: 400px;
+    }
+
+    .textSection{
+        width: calc(100% - 400px);
+    }
+
+    .titleSection{
+        font-size:50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto for a cleaner look */
+    color: #333;
+    background-color: #fafbfc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Layout */
+.termsContainer {
+    display: flex;
+    min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+    transition: all 0.3s ease;
+}
+
+/* Left Navigation */
+.sideNav {
+    position: sticky;
+    top: 0;
+    width: 260px;
+    background-color: #fff;
+    padding: 25px 20px;
+    height: 100vh;
+    border-right: 1px solid #e1e4e8;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sideNav ul li {
+    font-size: 1.15rem; /* Slightly larger font for better readability */
+    font-weight: 500; /* Medium weight for improved legibility */
+    color: #2e3a59;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.sideNav ul li:hover {
+    background-color: #f4f7fa;
+    padding-left: 15px;
+}
+
+.sideNav ul li.active {
+    color: #0065FF;
+    font-weight: 700; /* Bold weight for active state */
+    background-color: #e1f0ff;
+}
+
+.sideNav ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+/* Sidebar Heading Styling */
+.sidebar-heading {
+    font-size: 1.8rem;
+    color: #0065FF;
+    font-weight: 700; /* Bolder for a stronger emphasis */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0065FF;
+    padding-bottom: 10px;
+}
+
+/* Icon Styling for Sidebar */
+.sideNav ul li i {
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+
+/* Main Content Area */
+.contentArea {
+    flex: 1;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contentArea h1 {
+    font-size: 2rem;
+    color: #0065FF;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Section Titles */
+h2, h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bold for emphasis */
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1rem;
+    color: #4f5c6b;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400; /* Normal weight for body text */
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: #0065FF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004b99;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+th {
+    background-color: #f4f7fa;
+    color: #2e3a59;
+}
+
+td {
+    color: #4f5c6b;
+}
+
+tr:hover {
+    background-color: #f4f7fa;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sideNav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .contentArea {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.4rem;
+    }
+}

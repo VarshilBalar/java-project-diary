@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-bottom: 2px solid rgb(226, 221, 221);
+}
+
+.leftNavSection {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left:12px;
+}
+
+.logoSection {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.logoText {
+    font-size: 23px;
+    color: #809bce;
+    font-weight: 700;
+}
+
+.navs {
+    display: flex;
+    gap: 15px;
+    margin-left: 70px;
+    height: 100%;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navLink{
+    text-decoration: none;
+}
+
+.selectedNav {
+    display: flex;
+    height: 100%;
+    border-bottom: 3.5px solid #2c4778;
+    align-items: center;
+}
+
+.selectedNavText {
+    color: #2c4778;
+    font-weight: 600;
+}
+
+.unselectedNav {
+    color: #354e7e;
+}
+
+.reportsButton {
+    margin-left: 60px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #354e7e;
+}
+
+.rightNavSection {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 12px;
+    gap:12px;
+}
+
+.navImg{
+    width:20px;
+    height: 20px;
+}
+
+.searchBox {
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.mainContent {
+    display: flex;
+    height: calc(100% - 52px);
+    justify-content: space-between;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+    padding-top: 25px;
+    border-right: 2px solid rgb(226, 221, 221);
+}
+
+.sidebarLink{
+    text-decoration: none;
+}
+
+.sidebarOptions {
+    width: 100%;
+    display: flex;
+    padding: 5px 14px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.sidebarOptionsIcon {
+    width: 22px;
+    height: 22px;
+}
+
+.sidebarOptionsText {
+    font-size: 13px;
+    color: rgb(102, 101, 101);
+}
+
+.mainContainer {
+    width: calc(100% - 400px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.mainContainer::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.mainContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #f3eded;
+}
+
+.mainSection {
+    margin: 20px 20px;
+}
+
+.welcomeUser {
+    color: #2c4778;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.messageSection {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.welcomeOptionsSection {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.optionCardLink{
+    text-decoration: none;
+    color:black;
+}
+
+.optionCard {
+    width: 140px;
+    height: 120px;
+    border: 2px solid rgb(226, 221, 221);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grayArea {
+    background-color: rgb(245, 245, 245);
+    width: 130px;
+    height: 80px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+}
+
+.cardText {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.cardIconArea {
+    background-color: white;
+    width: 33px;
+    height: 33px;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.guidedSetupText {
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 40px;
+    color: #2c4778;
+}
+
+.stepCardSection {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.stepCard {
+    width: 140px;
+    height: 120px;
+    border: 2px solid rgb(226, 221, 221);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.oddArea {
+    background-color: #b8e0d2;
+    width: 130px;
+    height: 80px;
+    margin: 5px auto;
+}
+
+.evenArea {
+    background-color: #fcf4dd;
+    width: 130px;
+    height: 80px;
+    margin: 5px auto;
+}
+
+.step {
+    width: 120px;
+    height: 70px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.stepNumber {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.stepAreaMessage {
+    font-size: 11px;
+}
+
+.stepCardText {
+    font-size: 11px;
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+.recentSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.recentSectionNavigation {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    margin-top: 12px;
+    gap: 10px;
+    border-bottom: 1px solid rgb(226, 221, 221);
+}
+
+.recentSectionNav {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    height: 100%;
+    font-weight: 700;
+}
+
+.recentSectionNavSelected {
+    border-bottom: 3.5px solid #2c4778;
+    color: #2c4778;
+    margin-top: 2px;
+}
+
+.recentText {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.recentActivities {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 45px;
+}
+
+.activityInfo {
+    margin-left: 10px;
+
+}
+
+.activityName {
+    margin-top: 5px;
+}
+
+.activity:hover {
+    background-color: rgb(239, 237, 237);
+}
+
+.projectName {
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(164, 162, 162);
+}
+
+.lastSeen {
+    color: rgb(139, 138, 138);
+    font-size: 14px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+.rightSidebar {
+    width: 270px;
+    border-left: 2px solid rgb(226, 221, 221);
+}
+
+.profileSection {
+    width: 100%;
+    cursor: pointer;
+}
+
+.usernameIcon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 50%;
+    margin: 10px auto;
+    margin-top: 30px;
+    background-color: #b7d1e4;
+    color: #2c4778;
+    font-size: 30px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.useremail {
+    font-size: 14px;
+    text-align: center;
+}
+
+.calendarTitle{
+    font-size: 13px;
+    margin-left:5px;
+    margin-top:40px;
+    font-weight: 900;
+    color:#2c4778
+}
+
+.calendar{
+    margin:10px 5px;
+    font-size:12px;
+    background-color: #ecf0f3;
+    padding-top: 5px;
+    border-radius: 2px;
+}
+
+.monthHandle{
+    margin-left:5px;
+    border-bottom:1px solid black;
+    padding-bottom: 5px;
+}
+
+.weekdays{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+}
+
+.dateRow{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin-top:5px;
+}
+
+.date{
+    padding:5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.date:hover{
+    background-color: rgb(243, 239, 239);
+}
+
+.reminderSection{
+    border:8px solid rgb(193, 214, 161);
+    margin:5px 5px;
+    padding:5px;
+    height: 190px;
+}
+
+.reminderContainer{
+    overflow-y:scroll;
+}
+
+.reminderTitle{
+    font-size:12px;
+    font-weight: 900;
+    color:#354e7e;
+}
+
+.reminderUnit{
+    width:100%;
+    display: flex;
+    padding:5px 0px;
+    border-bottom:1px solid black;
+}
+
+.bellIconDiv{
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #354e7e;
+    border-radius: 50%;
+}
+
+.bellIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.reminderMessage{
+    margin-left:7px;
+    font-size: 12px;
+    font-weight: 600;
+}

@@ -1,0 +1,131 @@
+<!Doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="activitydetail.css">
+    <title>Your Projects</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="formSection">
+        <div class="form">
+            <div class="createChallengeText">Create Challenge</div>
+            <div class="createChallengeSection">
+                <label for="challengeDesc" class="inputTitle">Describe the challenge</label>
+                <textarea class="inputBox" name="projectDesc" rows="6" cols="10"></textarea>
+            </div>
+            <div class="projectFormButtons">
+                <button class="projectCancelButton">Cancel</button>
+                <button class="projectCreateButton" onsubmit="assignTeam()">Create</button>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="leftNavSection">
+            <div class="logoSection">
+                <img src="">
+                <div class="logoText">PlanGeNow</div>
+            </div>
+            <div class="navs">
+                <a href="../homepage/homepage.html" class="navLink">
+                    <div class="unselectedNav">Home</div>
+                </a>
+                <a href="../projects/projects.html" class="navLink">
+                    <div class="unselectedNav">Projects</div>
+                </a>
+                <a href="../myactivities/myactivities.html" class="navLink">
+                    <div class="unselectedNav">My Activities</div>
+                </a>
+            </div>
+            <button class="reportsButton">Reports</button>
+        </div>
+        <div class="rightNavSection">
+            <input type="text" placeholder="Search" class="searchBox">
+            <a><img class="navImg" src="../assets/bell-icon.png"></a>
+            <a href="../faq/faq.html"><img class="navImg" src="../assets/question.png"></a>
+            <a href="../profile_settings/profile.html"><img class="navImg" src="../assets/settings.jpg"></a>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="sidebar">
+            <a href="../teampage/teampage.html" class="sidebarLink">
+                <div class="sidebarOptions">
+                    <img class="sidebarOptionsIcon" src="../assets/group.png"></img>
+                    <div class="sidebarOptionsText">My Teams</div>
+                </div>
+            </a>
+            <a href="../collaborationpage/collaborationpage.html" class="sidebarLink">
+                <div class="sidebarOptions">
+                    <img class="sidebarOptionsIcon" src="../assets/collaboration.png"></img>
+                    <div class="sidebarOptionsText">My Collaborations</div>
+                </div>
+            </a>
+        </div>
+        <div class="mainContainer">
+            <div class="mainSection">
+                <div class="projectHeader">
+                    <img class="projectIcon" src="../assets/clipboard.png">
+                    <div class="projectOptions">
+                        <div class="projectTitle">Activity Title</div>
+                        <div class="projectNav">
+                            <div class="navOption activeOption">Info</div>
+                            <div class="navOption">Challenges/Solutions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoSection">
+                    <div class="activityDetailsText">
+                        Activity Objectives
+                    </div>
+                    <div class="activityDetails">
+                        These are the objectives
+                    </div>
+                </div>
+                <div class="challengesSection">
+                    <div class="challengesHeader">
+                        <div class="challengesSectionText">
+                            Challenges/Solutions
+                        </div>
+                        <button class="createChallengeButton"   >Create Challenge</button>
+                    </div>
+                    <div class="challengesContainer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightSidebar">
+            <div class="activityInfoSection">
+                <div class="activityInfoContainer">
+                    <div class="activityInfoTitle">Status</div>
+                    <div class="activityInfo">Done</div>
+                </div>
+                <div class="activityInfoContainer">
+                    <div class="activityInfoTitle">Assigned To</div>
+                    <div class="assignedToName">Username</div>
+                    <div class="assignedToEmail">username@gmail.com</div>
+                </div>
+                <div class="activityInfoContainer">
+                    <div class="activityInfoTitle">Start Date</div>
+                    <div class="activityInfo">11.12.2024</div>
+                </div>
+                <div class="activityInfoContainer">
+                    <div class="activityInfoTitle">Deadline</div>
+                    <div class="activityInfo">15.12.2024</div>
+                </div>
+                <div class="activityInfoContainer">
+                    <div class="activityInfoTitle">Time Spent</div>
+                    <div class="activityInfo">3h 18min</div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+</body>
+<script src="./activitydetail.js"></script>
+
+</html>

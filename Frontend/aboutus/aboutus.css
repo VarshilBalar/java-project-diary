@@ -1,0 +1,297 @@
+body{
+    margin:0;
+    padding:0;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    width:100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    border-color: orange;
+    font-size: 20px;
+}
+
+.leftSection{
+    margin-left:60px;
+    display: flex;
+    gap:25px;
+}
+
+.rightSection{
+    margin-right:60px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.homeIcon{
+    width:20x;
+    height:20px;
+    cursor:pointer;
+}
+
+.aboutUs{
+    cursor:pointer;
+}
+
+.contactUs{
+    cursor:pointer;
+}
+
+.loginBtn{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginLink{
+    text-decoration: none;
+    color:black;
+}
+
+.signupBtn{
+    width:85px;
+    height:35px;
+    font-size:16px;
+    border:none;
+    border-radius:16px;
+    font-weight: 700;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.text-content p {
+    margin: 10 px;
+    font-size: 1.1em;
+}
+
+.about-us {
+    text-align: center;
+    margin: 10px 40px 10px;
+}
+.extra {
+    display: none;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.text-content {
+    position: relative;
+    color: black;
+    padding: 0px 300px 10px;
+    text-align: center;
+    font-size: 16px;
+    text-align: justify;
+}
+.text-content > h1,h2 {
+    font-size: 6em;
+    color: rgb(142, 173, 202);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.explore{
+   margin: 10px;
+}
+.explore > *{
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.explore:hover{
+    color: rgb(142, 100, 256);
+}
+.text-content > h2 {
+    font-size: 2em;
+    color: rgb(142, 173, 202);
+    margin: -10px auto 0px;
+    padding: 0px;
+}
+.explore i {
+    margin-top: 0px;
+    padding: 0px;
+
+}
+.team {
+    width: 50%;
+    margin: auto;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.member {
+    flex: 0 0 33.333%; /* Each member takes up one-third of the view */
+    text-align: center;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;  /* Ensures smooth sliding */
+}
+
+.extra p{
+    font-size: 0.55em;
+    color: black;
+    margin: 0px 300px 0px;
+    padding: 0px;
+    text-align: justify;
+}
+.extra > * {
+    margin-bottom: -5px;
+}
+.images img {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+
+}
+.images{
+    display: flex;
+    gap: 40px;
+    justify-content:center;
+    align-items: center;
+    margin-bottom:20px
+
+}
+.team h2{
+    font-size: 3em;
+    color: black;
+}
+.prev, .next {
+    z-index: 5;
+}
+.team {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10 px;
+}
+
+.member {
+    width: 100 px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.member p {
+    margin-top: 8px;
+}
+
+.highlighted {
+    transform: scale(1.1);
+
+}
+
+.contact-form {
+    background: white;
+    padding: 2em;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+    
+}
+
+.contact-form h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Add this line to include padding in width */
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5a67d8;
+}

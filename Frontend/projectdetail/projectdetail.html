@@ -1,0 +1,409 @@
+<!Doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="projectdetail.css">
+    <title>Your Projects</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="formSection">
+        <form class="activityForm">
+            <div class="formTitle">Create Activity</div>
+            <div class="projectNameField">
+                <label for="projectName" class="inputTitle">Activity Name:</label>
+                <input name="projectName" class="inputField projectName" type="text">
+            </div>
+            <div class="activityTypeField">
+                <label for="activityType" class="inputTitle">Activity Type</label>
+                <select name="activityType" class="activityTypeInput">
+                    <option value="select" default>--Select--</option>
+                    <option value="plan">Planning</option>
+                    <option value="req">Requirement Analysis</option>
+                    <option value="design">Design</option>
+                    <option value="front">Frontend Development</option>
+                    <option value="back">Backend Development</option>
+                    <option value="api">API Development</option>
+                    <option value="database">Database Management</option>
+                    <option value="test">Testing (Unit, Integration, System)</option>
+                    <option value="debug">Debugging</option>
+                    <option value="deploy">Deployment</option>
+                    <option value="code">Code Review</option>
+                    <option value="docs">Documentation</option>
+                    <option value="research">Research</option>
+                    <option value="perform">Performance Optimization</option>
+                    <option value="main">Maintenance</option>
+                    <option value="sprint">Sprint Planning</option>
+                    <option value="retro">Retrospective</option>
+                    <option value="bug">Bug Fixing</option>
+                    <option value="security">Security Assessment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="projectTeamMembers">
+                <div class="projectTeamMembersAddition">
+                    <div class="projectTeamMembersInput">
+                        <label for="addTeam" class="inputTitle">Assign To</label>
+                        <input name="addTeam" class="inputField teamMemberField" type="text">
+                    </div>
+                    <button class="projectTeamMembersButton">Add</button>
+                </div>
+                <div class="projectTeamTags">
+
+                </div>
+            </div>
+            <div class="projectDescription">
+                <label for="projectDesc" class="inputTitle">Activity Objectives</label>
+                <textarea name="projectDesc" rows="6" cols="10"></textarea>
+            </div>
+            <div class="projectDeadline">
+                <label for="projectDead" class="inputTitle">Deadline:</label>
+                <input class="deadlineInput" type="date">
+            </div>
+            <div class="projectFormButtons">
+                <button class="projectCancelButton">Cancel</button>
+                <button class="projectCreateButton" onsubmit="assignTeam()">Create</button>
+            </div>
+        </form>
+        <form class="addMemberForm">
+            <div class="formTitle">Add Member</div>
+            <div class="projectTeamMembers">
+                <div class="projectTeamMembersAddition">
+                    <div class="projectTeamMembersInput">
+                        <label for="addTeam" class="inputTitle">Assign To</label>
+                        <input name="addTeam" class="inputField teamMemberField2" type="text">
+                    </div>
+                    <button class="projectTeamMembersButton2">Add</button>
+                </div>
+                <div class="projectTeamTags2">
+
+                </div>
+            </div>
+            <div class="projectFormButtons">
+                <button class="projectCancelButton">Cancel</button>
+                <button class="updateTeamButton" onsubmit="newTeam()">Update</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <div class="navbar">
+        <div class="leftNavSection">
+            <div class="logoSection">
+                <img src="">
+                <div class="logoText">PlanGeNow</div>
+            </div>
+            <div class="navs">
+                <a href="../homepage/homepage.html" class="navLink">
+                    <div class="unselectedNav">Home</div>
+                </a>
+                <a href="../projects/projects.html" class="navLink">
+                    <div class="unselectedNav">Projects</div>
+                </a>
+                <a href="../myactivities/myactivities.html" class="navLink">
+                    <div class="unselectedNav">My Activities</div>
+                </a>
+            </div>
+            <button class="reportsButton">Reports</button>
+        </div>
+        <div class="rightNavSection">
+            <input type="text" placeholder="Search" class="searchBox">
+            <a><img class="navImg" src="../assets/bell-icon.png"></a>
+            <a href="../faq/faq.html"><img class="navImg" src="../assets/question.png"></a>
+            <a href="../profile_settings/profile.html"><img class="navImg" src="../assets/settings.jpg"></a>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="sidebar">
+            <a href="../teampage/teampage.html" class="sidebarLink">
+                <div class="sidebarOptions">
+                    <img class="sidebarOptionsIcon" src="../assets/group.png"></img>
+                    <div class="sidebarOptionsText">My Teams</div>
+                </div>
+            </a>
+            <a href="../collaborationpage/collaborationpage.html" class="sidebarLink">
+                <div class="sidebarOptions">
+                    <img class="sidebarOptionsIcon" src="../assets/collaboration.png"></img>
+                    <div class="sidebarOptionsText">Collaborations</div>
+                </div>
+            </a>
+        </div>
+        <div class="mainContainer">
+            <div class="mainSection">
+                <div class="projectHeader">
+                    <img class="projectIcon" src="../assets/project-icon.png">
+                    <div class="projectOptions">
+                        <div class="projectSubHeader">
+                            <div class="projectTitle">Project Title</div>
+                            <button class="reportButton">Report</button>
+                        </div>
+                        <div class="projectNav">
+                            <div class="navOption activeOption">Activities</div>
+                            <div class="navOption">Team</div>
+                            <div class="navOption">Dashboard</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activityTypeSection">
+                <div class="createActivity">
+                    <button class="createActivityButton">Create Activity</button>
+                </div>
+                    <div class="activitySection">
+                        <div class="activitySectionTitle">To do</div>
+                        <div class="activityBar">
+                            <div class="projectDetail projectDetailGroup"><img src="../assets/star.png"
+                                    class="starIcon whiteStar"><img src="../assets/starYellow.png"
+                                    class="starIcon yellowStar"><a class="projectPageLink" href="../activitydetail/activitydetail.html">
+                                    <div class="activityInfo">
+                                        <div class="activityName">Activity 1</div>
+                                    </div><img src="../assets/external-link.png" class="linkIcon">
+                                </a></div>
+                            <div class="projectDetail">Username</div>
+                            <div class="projectDetail">Jan 5 2025</div>
+                            <div class="projectDetail">
+                                <img class="activityOptions" src="../assets/option.png">
+                                <div class="optionMenu">
+                                    <div class="menuOption editOption">Edit</div>
+                                    <div class="menuOption deleteOption">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activitySection">
+                        <div class="activitySectionTitle">In Progress</div>
+                        <div class="activityBar">
+                            <div class="projectDetail projectDetailGroup"><img src="../assets/star.png"
+                                    class="starIcon whiteStar"><img src="../assets/starYellow.png"
+                                    class="starIcon yellowStar"><a class="projectPageLink" href="../activitydetail/activitydetail.html">
+                                    <div class="activityInfo">
+                                        <div class="activityName">Activity 1</div>
+                                    </div><img src="../assets/external-link.png" class="linkIcon">
+                                </a></div>
+                            <div class="projectDetail">Username</div>
+                            <div class="projectDetail">Jan 5 2025</div>
+                            <div class="projectDetail">
+                                <img class="activityOptions" src="../assets/option.png">
+                                <div class="optionMenu">
+                                    <div class="menuOption editOption">Edit</div>
+                                    <div class="menuOption deleteOption">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="activitySection">
+                        <div class="activitySectionTitle">Completed</div>
+                        <div class="activityBar">
+                            <div class="projectDetail projectDetailGroup"><img src="../assets/star.png"
+                                    class="starIcon whiteStar"><img src="../assets/starYellow.png"
+                                    class="starIcon yellowStar"><a class="projectPageLink" href="../activitydetail/activitydetail.html">
+                                    <div class="activityInfo">
+                                        <div class="activityName">Activity 1</div>
+                                    </div><img src="../assets/external-link.png" class="linkIcon">
+                                </a></div>
+                            <div class="projectDetail">Username</div>
+                            <div class="projectDetail">Jan 5 2025</div>
+                            <div class="projectDetail">
+                                <img class="activityOptions" src="../assets/option.png">
+                                <div class="optionMenu">
+                                    <div class="menuOption editOption">Edit</div>
+                                    <div class="menuOption deleteOption">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="teamMembersSection">
+                    <div class="addTeamMember">
+                        <button class="addTeamMemberButton">Add Member</button>
+                    </div>
+                    <div class="teamSectionHeaderRow">
+                        <div class="teamSectionHeader">Name</div>
+                        <div class="teamSectionHeader">Role</div>
+                        <div class="teamSectionHeader">Contact Information</div>
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <div class="teamMemberIcon">
+                                <div>PC</div>
+                            </div>
+                            <div class="teamMemberName">Papri Row Chowdhury</div>
+                        </div>
+                        <div class="teamMemberRoleSection">
+                            <div class="teamMemberRole">Team Lead </div>
+                            <div class="teamMemberRole">UI Designer</div>
+                            <div class="teamMemberRole">Database Developer</div>
+                        </div>
+                        <div class="teamMemberContact">
+                            <div class="teamMemberEmail">papri@example.com</div>
+                            <div class="teamMemberNumber">+49-123456789</div>
+                        </div>
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <div class="teamMemberIcon">
+                                <div>PC</div>
+                            </div>
+                            <div class="teamMemberName">Papri Row Chowdhury</div>
+                        </div>
+                        <div class="teamMemberRoleSection">
+                            <div class="teamMemberRole">Team Lead </div>
+                            <div class="teamMemberRole">UI Designer</div>
+                            <div class="teamMemberRole">Database Developer</div>
+                        </div>
+                        <div class="teamMemberContact">
+                            <div class="teamMemberEmail">papri@example.com</div>
+                            <div class="teamMemberNumber">+49-123456789</div>
+                        </div>
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <div class="teamMemberIcon">
+                                <div>PC</div>
+                            </div>
+                            <div class="teamMemberName">Papri Row Chowdhury</div>
+                        </div>
+                        <div class="teamMemberRoleSection">
+                            <div class="teamMemberRole">Team Lead </div>
+                            <div class="teamMemberRole">UI Designer</div>
+                            <div class="teamMemberRole">Database Developer</div>
+                        </div>
+                        <div class="teamMemberContact">
+                            <div class="teamMemberEmail">papri@example.com</div>
+                            <div class="teamMemberNumber">+49-123456789</div>
+                        </div>
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <div class="teamMemberIcon">
+                                <div>PC</div>
+                            </div>
+                            <div class="teamMemberName">Papri Row Chowdhury</div>
+                        </div>
+                        <div class="teamMemberRoleSection">
+                            <div class="teamMemberRole">Team Lead </div>
+                            <div class="teamMemberRole">UI Designer</div>
+                            <div class="teamMemberRole">Database Developer</div>
+                        </div>
+                        <div class="teamMemberContact">
+                            <div class="teamMemberEmail">papri@example.com</div>
+                            <div class="teamMemberNumber">+49-123456789</div>
+                        </div>
+                    </div>
+                    <div class="teamRow">
+                        <div class="teamMember">
+                            <div class="teamMemberIcon">
+                                <div>PC</div>
+                            </div>
+                            <div class="teamMemberName">Papri Row Chowdhury</div>
+                        </div>
+                        <div class="teamMemberRoleSection">
+                            <div class="teamMemberRole">Team Lead </div>
+                            <div class="teamMemberRole">UI Designer</div>
+                            <div class="teamMemberRole">Database Developer</div>
+                        </div>
+                        <div class="teamMemberContact">
+                            <div class="teamMemberEmail">papri@example.com</div>
+                            <div class="teamMemberNumber">+49-123456789</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboardSection">
+                    <div class="activityCountSection">
+                      <div class="activityCountBox">
+                        <div class="timeSpentTitle">Time Spent</div>
+                        <div class="timeSpent">2d 5h 30m</div>
+                      </div>
+                      <div class="activityCountBox">
+                        <div class="activityBoxTitle">Completed Activity</div>
+                        <div class="activityCount">10</div>
+                        <div class="taskCountText">Task Count</div>
+                      </div>
+                      <div class="activityCountBox">
+                        <div class="activityBoxTitle">To Do Activity</div>
+                        <div class="activityCount">2</div>
+                        <div class="taskCountText">Task Count</div>
+                      </div>
+                      <div class="activityCountBox">
+                        <div class="activityBoxTitle">In Progress Activity</div>
+                        <div class="activityCount">2</div>
+                        <div class="taskCountText">Task Count</div>
+                      </div>
+                      <div class="activityCountBox">
+                        <div class="activityBoxTitle">Total Activity</div>
+                        <div class="activityCount">14</div>
+                        <div class="taskCountText">Task Count</div>
+                      </div>
+                    </div>
+                    <div class="graphSection">
+                      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="rightSidebar">
+            <div class="profileSection">
+                <div class="usernameIcon">
+                  <div class="usernameIconText">UN</div>
+                </div>
+                <div class="username">User Name</div>
+                <div class="useremail">username@gmail.com</div>
+              </div>
+              <div class="calendarTitle">Calendar</div>
+              <div class="calendar">
+                <div class="monthHandle">
+                  <div class="month">November 2024</div>
+                  <div class="arrows"></div>
+                </div>
+                <div class="weekdays">
+                  <div class="weekday">Mo</div>
+                  <div class="weekday">Tu</div>
+                  <div class="weekday">We</div>
+                  <div class="weekday">Th</div>
+                  <div class="weekday">Fr</div>
+                  <div class="weekday">Sa</div>
+                  <div class="weekday">Su</div>
+                </div>
+                <div class="dateSection"></div>
+              </div>
+              <div class="reminderSection">
+                <div class="reminderTitle">Reminders</div>
+                <div class="reminderContainer">
+                  <div class="reminderUnit">
+                    <div class="bellIconDiv">
+                      <img src="../assets/bell.png" class="bellIcon"></img>
+                    </div>
+                    <div class="reminderMessage">Reminder 1</div>
+                  </div>
+                  <div class="reminderUnit">
+                    <div class="bellIconDiv">
+                      <img src="../assets/bell.png" class="bellIcon"></img>
+                    </div>
+                    <div class="reminderMessage">Reminder 1</div>
+                  </div>
+                  <div class="reminderUnit">
+                    <div class="bellIconDiv">
+                      <img src="../assets/bell.png" class="bellIcon"></img>
+                    </div>
+                    <div class="reminderMessage">Reminder 1</div>
+                  </div>
+                  <div class="reminderUnit">
+                    <div class="bellIconDiv">
+                      <img src="../assets/bell.png" class="bellIcon"></img>
+                    </div>
+                    <div class="reminderMessage">Reminder 1</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div>
+
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="./projectdetail.js"></script>
+
+</html>

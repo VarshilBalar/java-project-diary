@@ -1,0 +1,315 @@
+body{
+    margin:0;
+    padding:0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.navbar{
+    width:100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    border-color: orange;
+    font-size: 20px;
+}
+
+.leftSection{
+    margin-left:60px;
+    display: flex;
+    gap:25px;
+}
+
+.rightSection{
+    margin-right:60px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.homeIcon{
+    width:20x;
+    height:20px;
+    cursor:pointer;
+}
+
+.aboutUs{
+    cursor:pointer;
+}
+
+.contactUs{
+    cursor:pointer;
+}
+
+.loginLink{
+    text-decoration: none;
+    color:black;
+}
+
+.loginBtn{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signupBtn{
+    width:85px;
+    height:35px;
+    font-size:16px;
+    border:none;
+    border-radius:16px;
+    font-weight: 700;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+.bodySection{
+    width:100%;
+    display: flex;
+}
+
+.leftMargin{
+    width:30px;
+    background-color: rgb(221, 241, 246);
+}
+
+.mainSection{
+    width:calc(100% - 60px);
+    padding:0px 25px;
+    margin-bottom:30px;
+}
+
+.introSection{
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-bottom:30px;
+    justify-content: space-between;
+    /* background-color: ; */
+}
+
+.rightMargin{
+    width:30px;
+    background-color: rgb(221, 241, 246);
+}
+
+.textSection{
+    width:calc(100% - 600px);
+}
+
+.workImage{
+    width:650px;
+    height:650px;
+}
+
+.titleSection{
+    font-size: 75px;   
+}
+
+.messageSection{
+    font-size:25px;
+    margin-top:20px;
+    margin-right:60px;
+    margin-left:10px;
+}
+
+.buttonSection{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin:30px 0px; 
+    gap:30px;
+    align-items: center;
+}
+
+.getstartedBtn{
+    width:150px;
+    height: 50px;
+    font-size:16px;
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(255, 205, 165);
+    cursor: pointer;
+}
+
+.learnmoreBtn{
+    width:150px;
+    height: 50px;
+    font-size:16px;
+    cursor: pointer;
+    border:1px solid;
+    border-radius:20px;
+    background-color: white;
+}
+
+.featureSection{
+    display: flex;
+    justify-content: space-around;
+    gap:25px;
+}
+
+.card{
+    width:100%;
+    height:200px;
+    border:8px solid;
+    border-radius:20px;
+    padding:20px;
+}
+
+.odd{
+    border-color: rgb(142, 173, 202);
+}
+
+.even{
+    border-color:rgb(255, 205, 165);
+}
+
+.cardTitle{
+    font-size:25px;
+    color: rgb(142, 173, 202)
+}
+
+.cardMessage{
+    font-size:18px;
+    margin-top:5px;
+}
+
+.footerSection{
+    width:100%;
+}
+
+.separator{
+    width:100%;
+    height:30px;
+    background-color: rgb(255, 205, 165);
+}
+
+.footerArea{
+    display: flex;
+    margin:40px 60px;
+    justify-content: space-around;
+}
+
+.projectSummary{
+    width:400px;
+}
+
+.footerProjectTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.quickLinksTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.contactTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.socialMediaIconsTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+
+
+@media only screen and (max-width:1200px)
+{
+    .workImage{
+        width:500px;
+        height: 500px;
+    }
+
+    .textSection{
+        width: calc(100% - 500px);
+    }
+
+    .titleSection{
+        font-size:60px;
+    }
+
+    .messageSection{
+        font-size:20px;
+    }
+
+    .getstartedBtn{
+        width:130px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .learnmoreBtn{
+        width:130px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .projectSummary{
+        width:300px;
+    }
+
+    .footerProjectTitle{
+        font-size:25px;
+    }
+
+    .quickLinksTitle{
+        font-size:25px;
+    }
+
+    .contactTitle{
+        font-size: 25px;
+    }
+
+    .socialMediaIconsTitle{
+        font-size:25px;
+    }
+
+    .aboutUs{
+        font-size: 18px;
+    }
+
+    .contactUs{
+        font-size:18px;
+    }
+
+    .loginBtn{
+        font-size: 18px;
+    }
+
+    .signupBtn{
+        font-size:14px;
+    }
+}
+
+@media only screen and (max-width:1024px)
+{
+    .workImage{
+        width:400px;
+        height: 400px;
+    }
+
+    .textSection{
+        width: calc(100% - 400px);
+    }
+
+    .titleSection{
+        font-size:50px;
+    }
+
+    .messageSection{
+        font-size:18px;
+    }
+
+    .projectSummary{
+        width: 250px;
+    }
+}
+
+
+
+
+

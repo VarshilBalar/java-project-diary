@@ -1,0 +1,300 @@
+body{
+    margin:0;
+    padding:0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.navbar{
+    width:100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    border-color: orange;
+    font-size: 20px;
+}
+
+.leftSection{
+    margin-left:60px;
+    display: flex;
+    gap:25px;
+}
+
+.rightSection{
+    margin-right:60px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.homeIcon{
+    width:20x;
+    height:20px;
+    cursor:pointer;
+}
+
+.aboutUs{
+    cursor:pointer;
+}
+
+.contactUs{
+    cursor:pointer;
+}
+
+.loginBtn{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginLink{
+    text-decoration: none;
+    color:black;
+}
+
+.signupBtn{
+    width:85px;
+    height:35px;
+    font-size:16px;
+    border:none;
+    border-radius:16px;
+    font-weight: 700;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+.bodySection{
+    width:100%;
+    display: flex;
+}
+
+.footerSection{
+    width:100%;
+}
+
+.separator{
+    width:100%;
+    height:30px;
+    background-color: rgb(255, 205, 165);
+}
+
+.footerArea{
+    display: flex;
+    margin:40px 60px;
+    justify-content: space-around;
+}
+
+.projectSummary{
+    width:400px;
+}
+
+.footerProjectTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.quickLinksTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.contactTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.socialMediaIconsTitle{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+
+
+ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    text-align: justify;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+
+.mainHeading, h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 700;
+    color: #333; 
+}
+
+.mainHeading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Merriweather', Georgia, serif;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, h5 {
+    margin-bottom: 10px; 
+}
+
+.mainHeading {
+    font-size: 3.5rem;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.subHeading {
+    font-family: 'Merriweather', Georgia, serif; 
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+ /* Bullet */
+ul li::before {
+    content: "●";
+    position: absolute;
+    left: 0; 
+    color: #ff8c00;
+    font-size: 1.2rem;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width:1200px)
+{
+    .workImage{
+        width:500px;
+        height: 500px;
+    }
+
+    .textSection{
+        width: calc(100% - 500px);
+    }
+
+    .titleSection{
+        font-size:60px;
+    }
+    
+
+    .footerProjectTitle{
+        font-size:25px;
+    }
+
+    .quickLinksTitle{
+        font-size:25px;
+    }
+
+    .contactTitle{
+        font-size: 25px;
+    }
+
+    .socialMediaIconsTitle{
+        font-size:25px;
+    }
+
+    .aboutUs{
+        font-size: 18px;
+    }
+
+    .contactUs{
+        font-size:18px;
+    }
+
+    .loginBtn{
+        font-size: 18px;
+    }
+
+    .signupBtn{
+        font-size:14px;
+    }
+}
+
+@media only screen and (max-width:1024px)
+{
+    .workImage{
+        width:400px;
+        height: 400px;
+    }
+
+    .textSection{
+        width: calc(100% - 400px);
+    }
+
+    .titleSection{
+        font-size:50px;
+    }
+}
+
+
+
+
+/* Header Section */
+.headingSection {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.mainHeading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333; /* Darker color for better readability */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; /* Modern and bold look */
+    letter-spacing: 2px; /* Slight spacing between letters for style */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15); /* Subtle depth with softer shadow */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Underline effect with a creative gradient */
+.mainHeading::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff8c00, #ffb400, #ff8c00); /* Gradient orange effect */
+    border-radius: 5px;
+    animation: underlineAnimation 1.5s ease-in-out infinite; /* Animate the underline for a dynamic effect */
+}
+
+/* Animation for the underline */
+@keyframes underlineAnimation {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
